@@ -1,0 +1,169 @@
+
+/*
+ * Base structure
+ */
+
+html,body {
+  height: 100%;
+  width: 100%;
+  
+  background-color: #222;
+  overflow: hidden;
+
+}
+
+
+/*
+ *----------------------------------Site Styles ---------------------------
+ */
+
+.site-container{
+  position: absolute;
+  top:0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.flare{
+  width: 110%;
+  height: 110%;
+  top:-10%;
+  left:-10%;
+  opacity: .66;
+  position: absolute;
+  background-image: url(../img/flare.png);
+  background-size: cover;
+  z-index: 4;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+}
+
+ .truth-logo{
+    position: absolute;
+    z-index: 2;
+    background-image: url(../img/logo.svg);    
+    background-repeat: no-repeat;
+    width:149.855px;
+    height:95.509px;    
+    top:30px;
+    right: 20px;
+    opacity: .6;    
+    z-index: 5;
+     -webkit-transition: opacity .15s ease-in-out;
+        -moz-transition: opacity .15s ease-in-out;
+        -ms-transition: opacity .15s ease-in-out;
+        -o-transition: opacity .15s ease-in-out;
+        transition: opacity .15s ease-in-out;
+ }
+ .truth-logo:hover{
+    
+    opacity: 1;
+    cursor: pointer;
+
+ }
+
+  .text1{
+    position: absolute;
+    z-index: 2;
+    background-image: url(../img/text1.svg);    
+    background-repeat: no-repeat;
+    width: 349.109px;
+    height: 221.588px;    
+    bottom: 300px;
+    left:125px;
+ } 
+
+ .text2{
+    position: absolute;
+    z-index: 2;
+    background-image: url(../img/text2.svg);    
+    background-repeat: no-repeat;
+    width:531.743px;
+    height:139.06px;    
+    bottom:75px;
+    left: 125px;
+ }
+
+
+.parallaxBG{
+  
+  position: absolute;  
+  background-image: url(../img/bg4.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  
+    
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) { 
+
+.parallaxBG{
+  opacity: .8;
+  
+}
+
+ .truth-logo{
+   
+    
+  -webkit-transform: scale(2); 
+     -moz-transform: scale(2); 
+      -ms-transform: scale(2); 
+       -o-transform: scale(2); 
+          transform: scale(2); 
+
+          transform-origin:right top;
+      -ms-transform-origin:right top; 
+  -webkit-transform-origin:right top; 
+  opacity: 1;
+  right:10px;
+
+
+ }
+
+ .flare{
+    
+    width: 140%;
+    height: 100%;
+    left:-15%;
+    opacity: .5;
+    
+}
+
+  .text1{
+      
+  -webkit-transform: scale(1.667); 
+     -moz-transform: scale(1.667); 
+      -ms-transform: scale(1.667); 
+       -o-transform: scale(1.667); 
+          transform: scale(1.667); 
+
+          transform-origin:left bottom;
+      -ms-transform-origin:left bottom;; 
+  -webkit-transform-origin:left bottom; 
+  bottom:400px;
+  left: 40px;
+
+ } 
+
+.text2{
+      
+  -webkit-transform: scale(1.667); 
+     -moz-transform: scale(1.667); 
+      -ms-transform: scale(1.667); 
+       -o-transform: scale(1.667); 
+          transform: scale(1.667); 
+
+          transform-origin:left bottom;
+      -ms-transform-origin:left bottom;; 
+  -webkit-transform-origin:left bottom; 
+  
+  left: 40px;
+ } 
+
+
+ 
+  
+}
